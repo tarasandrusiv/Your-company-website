@@ -1,0 +1,204 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 3000px;
+}
+header{
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.secondary{
+    background-color: white;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+header nav{
+    float: right;
+}
+header nav ul li a{
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1761a0;
+    transition: all 0.4s ease-in;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(4, 199, 231);
+}
+
+.img1{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//img/jacek-dylag-545264-unsplash.jpg);
+    background-size: 100% 100%;
+    
+}
+.slider, .slider ul, .slider ul li{
+    height: 900px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.slider h2{
+    font-weight: bold;
+    margin-top: 270px;
+}
+
+.slider span{
+    color:#1761a0;
+}
+.slider a{
+    padding: 10px 50px;
+    margin-right: 10px;
+}
+.slider a.btn-half{
+    background-color:  rgb(4, 199, 231);
+    color: white;
+    transition: all 0.4s ease-in;
+}
+.slider a.btn-half:hover{
+    background-color: #1761a0;
+}
+.slider a.btn-full{
+    background-color:  rgb(4, 199, 231);
+    color: white;
+    transition: all 0.4s ease-in;
+}
+.slider a.btn-full:hover{
+    background-color: #1761a0;
+}
+.img2{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//img/mario-gogh-1140530-unsplash.jpg);
+    background-size: 100%, 100%;
+}
+.img3{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//img/alesia-kazantceva-283291-unsplash.jpg);
+    background-size: 100%, 100%;
+}
+
+.slider i{
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.intro-area{
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.sub-heading{
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-heading:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left:50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    background-color: #077ee6;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sub-heading:hover:before{
+    width: 25%;
+    margin-left: -12%;
+}
+
+
+.sub-heading:after{ 
+content: "";
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background: #e1e1e1;
+    
+}
+
+.sub-heading p {
+    color: #818181 ;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}  
+
+.intro-block{
+    position: relative;
+    background-color: #f7f7f7;
+    margin: 50px 0px 0px;
+    padding: 70px 25px 40px;
+    text-align: center;
+}
+
+.intro-block:hover, .intro-block.active{
+    background: #0aabe1;
+}
+
+.intro-block:hover{
+    transition: .6s ease;
+    -webkit-transition: .6s ease;
+    -moz-transition: .6s ease; 
+    -ms-transition: .6s ease; 
+    -o-transition:.6s ease;
+
+}
+
+.intro-block .intro-icon{
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+.intro-block i{
+    font-size: 30px;
+    width: 63px;
+    height: 63px;
+    color: white;
+    line-height: 2;
+    background: #077ee6;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #cceef9;
+}
+
+.intro-block:hover i, .intro-block.active i{
+    background: white;
+    color: #077ee6;
+    box-shadow: 0px 0px 0px #cceef9;
+}
+.intro-block h3{
+    font-size: 18px;
+    color: #077ee6;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.intro-block p{
+    color:#505050;
+}
+
+.intro-block:hover h3, .intro-block:hover p{
+  color: #f6f6f6;
+}
